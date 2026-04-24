@@ -27,7 +27,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       <WhyChooseUs dict={dict.whyChooseUs} />
       <PartnerMarquee dict={dict} />
       <ContactSection dict={dict} />
-      <Footer dict={dict.footer} />
+      <Footer lang={lang} dict={dict.footer} />
     </main>
   );
 }

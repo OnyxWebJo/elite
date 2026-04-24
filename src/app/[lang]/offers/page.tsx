@@ -38,7 +38,7 @@ export default async function OffersPage({ params }: { params: Promise<{ lang: '
         <OffersGrid dict={dict} CARS={CARS} />
       </section>
 
-      <Footer dict={dict.footer} />
+      <Footer lang={lang} dict={dict.footer} />
     </main>
   );
 }

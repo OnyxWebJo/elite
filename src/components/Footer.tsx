@@ -1,16 +1,18 @@
 "use client";
 
-import { MapPin, Phone, Mail, FileText, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, FileText, Camera, Share2, MessageSquare } from "lucide-react";
 import Link from "next/link";
 
-export default function Footer({ dict }: { dict: any }) {
+export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
+  const currentLang = lang || 'en';
+  
   return (
     <footer className="bg-black text-white py-16 px-6 lg:px-12 border-t-8 border-red-600">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
         
         {/* Brand */}
         <div>
-          <Link href="/" className="flex flex-col group mb-6 inline-flex">
+          <Link href={`/${currentLang}`} className="flex flex-col group mb-6 inline-flex">
             <span className="text-2xl font-black tracking-widest text-white uppercase group-hover:text-red-500 transition-colors">
               ELITE <span className="font-light">النخبة</span>
             </span>
@@ -22,14 +24,14 @@ export default function Footer({ dict }: { dict: any }) {
             {dict.brandDesc}
           </p>
           <div className="flex justify-center sm:justify-start gap-4">
-            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
-              <Instagram className="w-4 h-4" />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
+              <Camera className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
-            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
-              <Facebook className="w-4 h-4" />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
+              <Share2 className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
-            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
-              <Twitter className="w-4 h-4" />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
+              <MessageSquare className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
           </div>
         </div>
@@ -57,10 +59,10 @@ export default function Footer({ dict }: { dict: any }) {
         <div>
           <h4 className="text-lg font-bold uppercase mb-6 tracking-wider">{dict.quickLinks}</h4>
           <ul className="space-y-3">
-            <li><Link href="#about" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">About Us</Link></li>
-            <li><Link href="#services" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">Our Services</Link></li>
-            <li><Link href="#process" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">The Process</Link></li>
-            <li><Link href="/offers" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase font-bold text-red-500">Latest Deals</Link></li>
+            <li><Link href={`/${currentLang}#about`} className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">About Us</Link></li>
+            <li><Link href={`/${currentLang}#services`} className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">Our Services</Link></li>
+            <li><Link href={`/${currentLang}#process`} className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">The Process</Link></li>
+            <li><Link href={`/${currentLang}/offers`} className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase font-bold text-red-500">Latest Deals</Link></li>
           </ul>
         </div>
         

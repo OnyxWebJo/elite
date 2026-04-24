@@ -9,7 +9,7 @@ export default function Hero({ dict }: { dict: any }) {
   const [current, setCurrent] = useState(0);
 
   // We map the images sequentially to the dictionary slides
-  const images = ["/images/car.png", "/images/cargo.png", "/images/car.png", "/images/cargo.png"];
+  const images = ["/elite/images/car.png", "/elite/images/cargo.png", "/elite/images/car.png", "/elite/images/cargo.png"];
 
   const nextSlide = () => {
     setCurrent((prev) => (prev === dict.slides.length - 1 ? 0 : prev + 1));

@@ -5,10 +5,11 @@ import Link from "next/link";
 
 export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
   const currentLang = lang || 'en';
+  const isAr = currentLang === 'ar';
   
   return (
     <footer className="bg-black text-white py-16 px-6 lg:px-12 border-t-8 border-red-600">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left rtl:sm:text-right">
         
         {/* Brand */}
         <div>
@@ -23,7 +24,7 @@ export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
           <p className="text-gray-400 text-sm leading-relaxed mb-6 font-light">
             {dict.brandDesc}
           </p>
-          <div className="flex justify-center sm:justify-start gap-4">
+          <div className="flex justify-center sm:justify-start rtl:sm:justify-start gap-4">
             <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
               <Camera className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
@@ -41,15 +42,15 @@ export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
           <h4 className="text-lg font-bold uppercase mb-6 tracking-wider">{dict.contact}</h4>
           <ul className="space-y-4">
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-gray-400 text-sm hover:text-white transition-colors">
-              <MapPin className="text-red-500 w-5 h-5 flex-shrink-0" />
+              <MapPin className="text-red-600 w-5 h-5 flex-shrink-0" />
               <span>{dict.location}</span>
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
-              <Phone className="text-red-500 w-5 h-5 flex-shrink-0" />
+              <Phone className="text-red-600 w-5 h-5 flex-shrink-0" />
               <span>{dict.phone}</span>
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
-              <Mail className="text-red-500 w-5 h-5 flex-shrink-0" />
+              <Mail className="text-red-600 w-5 h-5 flex-shrink-0" />
               <span>{dict.email}</span>
             </li>
           </ul>
@@ -84,11 +85,13 @@ export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
       </div>
       
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between">
-        <p className="text-gray-600 text-xs uppercase tracking-widest text-center md:text-left">
+        <p className="text-gray-600 text-xs uppercase tracking-widest text-center md:text-left rtl:md:text-right">
           &copy; {new Date().getFullYear()} {dict.rights}
         </p>
-        <p className="text-gray-600 text-xs uppercase tracking-widest mt-4 md:mt-0 text-center md:text-right">
-          {dict.designedBy}
+        <p className="text-gray-600 text-xs uppercase tracking-widest mt-4 md:mt-0 text-center md:text-right rtl:md:text-left font-bold">
+          <a href="https://onyyx.tech/en/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
+            {dict.designedBy}
+          </a>
         </p>
       </div>
     </footer>

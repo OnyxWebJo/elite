@@ -22,7 +22,7 @@ export default function ContactSection({ dict }: { dict: any }) {
               {contact.title}
             </h2>
             <h3 className="text-4xl md:text-5xl font-black text-gray-900 mb-8 uppercase tracking-tight">
-              Get in Touch
+              {contact.heading}
             </h3>
             <p className="text-gray-600 text-lg mb-12 leading-relaxed">
               {contact.desc}
@@ -34,7 +34,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <MapPin className="text-red-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">Our Location</h4>
+                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">{contact.locationLabel}</h4>
                   <p className="text-gray-600">{contact.locationText}</p>
                 </div>
               </div>
@@ -44,7 +44,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <Phone className="text-red-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">Phone Number</h4>
+                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">{contact.phoneLabel}</h4>
                   <p className="text-gray-600">{contact.phoneText}</p>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <Mail className="text-red-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">Email Address</h4>
+                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">{contact.emailLabel}</h4>
                   <p className="text-gray-600">{contact.emailText}</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <MessageSquare className="text-red-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">WhatsApp</h4>
+                  <h4 className="text-gray-900 font-bold uppercase tracking-wider mb-1">{contact.whatsappLabel}</h4>
                   <p className="text-gray-600">{contact.whatsappText}</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                 <input 
                   type="text" 
                   className="w-full bg-white border border-gray-200 px-4 py-4 outline-none focus:border-red-600 transition-colors"
-                  placeholder="John Doe"
+                  placeholder=""
                 />
               </div>
 
@@ -101,7 +101,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <input 
                     type="tel" 
                     className="w-full bg-white border border-gray-200 px-4 py-4 outline-none focus:border-red-600 transition-colors"
-                    placeholder="+964..."
+                    placeholder=""
                   />
                 </div>
                 <div>
@@ -111,7 +111,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                   <input 
                     type="text" 
                     className="w-full bg-white border border-gray-200 px-4 py-4 outline-none focus:border-red-600 transition-colors"
-                    placeholder="e.g. Ford Mustang"
+                    placeholder=""
                   />
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function ContactSection({ dict }: { dict: any }) {
                 <textarea 
                   rows={4}
                   className="w-full bg-white border border-gray-200 px-4 py-4 outline-none focus:border-red-600 transition-colors resize-none"
-                  placeholder="..."
+                  placeholder=""
                 ></textarea>
               </div>
 

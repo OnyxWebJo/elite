@@ -104,7 +104,7 @@
     "subscribeP": "Subscribe to our latest car imports and auction deals.",
     "placeholder": "YOUR EMAIL",
     "rights": "Elite Global Cargo. All rights reserved.",
-    "designedBy": "Designed by Antigravity"
+    "designedBy": "Designed by Onyx Web Solutions"
   },
   "header": {
     "chat": "CHAT 24/7",
@@ -130,11 +130,16 @@
   },
   "contactForm": {
     "title": "Contact Us",
-    "desc": "Contact us today and start your journey to import your car from the USA with ease and confidence.",
+    "heading": "Get in Touch",
+    "desc": "Reach out to us today and start your journey of importing your vehicle from the USA with ease and confidence.",
     "locationText": "Najaf - Iraq",
+    "locationLabel": "Our Location",
     "phoneText": "+964 123 456 7890",
+    "phoneLabel": "Phone Number",
     "emailText": "info@elitecargo.iq",
-    "whatsappText": "Available 24/7",
+    "emailLabel": "Email Address",
+    "whatsappText": "Available 24/7 on WhatsApp",
+    "whatsappLabel": "WhatsApp",
     "formName": "Full Name",
     "formPhone": "Phone Number",
     "formInterest": "Vehicle of Interest (Optional)",

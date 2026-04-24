@@ -104,7 +104,7 @@
     "subscribeP": "اشترك ليصلك آخر عروض استيراد السيارات والمزادات.",
     "placeholder": "البريد الإلكتروني",
     "rights": "النخبة للشحن العالمي. جميع الحقوق محفوظة.",
-    "designedBy": "تم التصميم بواسطة Antigravity"
+    "designedBy": "تم تطوير الموقع بواسطة Onyx Web Solutions"
   },
   "header": {
     "chat": "محادثة 24/7",
@@ -130,11 +130,16 @@
   },
   "contactForm": {
     "title": "تواصل معنا",
+    "heading": "ابق على تواصل",
     "desc": "تواصل معنا اليوم وابدأ رحلتك في استيراد سيارتك من أمريكا بكل سهولة وثقة.",
     "locationText": "النجف - العراق",
+    "locationLabel": "موقعنا",
     "phoneText": "+964 123 456 7890",
+    "phoneLabel": "رقم الهاتف",
     "emailText": "info@elitecargo.iq",
+    "emailLabel": "البريد الإلكتروني",
     "whatsappText": "متاح على مدار الساعة 24/7",
+    "whatsappLabel": "واتساب",
     "formName": "الاسم الكامل",
     "formPhone": "رقم الهاتف",
     "formInterest": "السيارة المطلوبة (اختياري)",

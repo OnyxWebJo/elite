@@ -38,7 +38,7 @@ export default function About({ dict }: { dict: any }) {
           <div className="absolute inset-0 border-4 border-red-600 rtl:-translate-x-4 ltr:translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-y-2 group-hover:rtl:-translate-x-2 group-hover:ltr:translate-x-2"></div>
           <div className="relative w-full h-full shadow-2xl overflow-hidden z-10">
              <Image 
-               src="/images/about-shipping.png" 
+               src="/elite/images/about-shipping.png" 
                alt="Elite Cargo Global Shipping & Auctions" 
                fill 
                className="object-cover group-hover:scale-110 transition-transform duration-700"

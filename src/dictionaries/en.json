@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "id": 1,
+        "title": "Elite Auto",
+        "subtitle": "PERFORMANCE",
+        "textBg": "MACHINES",
+        "description": "Al Nokhba Car Import Services. We Buy, Inspect & Ship — You Receive with Confidence"
+      },
+      {
+        "id": 2,
+        "title": "Auctions Access",
+        "subtitle": "BEST PRICES",
+        "textBg": "SOURCE",
+        "description": "Access Copart, IAAI & Manheim Auctions. Best Prices Direct from the Source"
+      },
+      {
+        "id": 3,
+        "title": "Safe Delivery",
+        "subtitle": "YARD TO DOOR",
+        "textBg": "SHIPPING",
+        "description": "From Auction Yard to Your Door. Shipping to Iraq, Jordan & Dubai"
+      },
+      {
+        "id": 4,
+        "title": "End-to-End Service",
+        "subtitle": "TRANSPARENCY",
+        "textBg": "TRUST",
+        "description": "End-to-End Service from Purchase to Delivery. Full Transparency at Every Step"
+      }
+    ],
+    "discover": "DISCOVER"
+  },
+  "about": {
+    "label": "About Elite",
+    "title": "Your Trusted Partner in Global Auto Imports",
+    "p1": "At Al Nokhba, we help you buy cars from U.S. auctions easily and safely. We provide full-service solutions including purchasing vehicles from Copart, IAAI, and Manheim auctions, towing from auction yards, storage, inspection, and overseas shipping to Iraq (Najaf, Baghdad, Basra), as well as Jordan and Dubai.",
+    "p2": "We understand the market and work on your behalf to secure the best deal at the lowest cost.",
+    "readMore": "Read More"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "1. Buying Cars from US Auctions",
+        "description": "We purchase vehicles on your behalf from top U.S. auctions like Copart, IAAI, and Manheim, with expert consultation to help you choose the right car."
+      },
+      {
+        "title": "2. Inspection & Evaluation",
+        "description": "We assist in inspecting and evaluating vehicles before purchase to minimize risks."
+      },
+      {
+        "title": "3. Towing (Safe Transit)",
+        "description": "We tow vehicles from auction yards to our warehouses safely and efficiently."
+      },
+      {
+        "title": "4. Storage & Preparation",
+        "description": "We provide temporary storage and prepare vehicles for shipping."
+      },
+      {
+        "title": "5. International Shipping",
+        "description": "Overseas shipping from the U.S. to Iraq (Najaf, Baghdad, Basra), Jordan, and Dubai."
+      },
+      {
+        "title": "6. Shipment Tracking",
+        "description": "We provide regular updates on your shipment until delivery."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "Process",
+    "title": "How It Works",
+    "steps": [
+      "Choose your car",
+      "We buy it for you",
+      "Towing & inspection",
+      "Shipping to your country",
+      "Receive your car"
+    ]
+  },
+  "whyChooseUs": {
+    "label": "Why Choose Us",
+    "title": "The Elite Advantage",
+    "points": [
+      "Expertise in U.S. car auctions",
+      "Competitive pricing & transparency",
+      "Full support in Arabic & English",
+      "Reliable and fast shipping network",
+      "Dedicated customer service"
+    ]
+  },
+  "footer": {
+    "brandSubtitle": "Global Cargo",
+    "brandDesc": "Contact us today and start your journey to import your car from the USA with ease and confidence.",
+    "contact": "Contact Us",
+    "location": "Location: Najaf – Iraq",
+    "phone": "Available 24/7 (WhatsApp)",
+    "email": "Email: info@elitecargo.iq",
+    "quickLinks": "Quick Links",
+    "links": ["Offers / Deals", "About Us", "Our Services", "How it works"],
+    "subscribe": "Get Updates",
+    "subscribeP": "Subscribe to our latest car imports and auction deals.",
+    "placeholder": "YOUR EMAIL",
+    "rights": "Elite Global Cargo. All rights reserved.",
+    "designedBy": "Designed by Antigravity"
+  },
+  "header": {
+    "chat": "CHAT 24/7",
+    "global": "Global Cargo",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "process": "Process",
+      "offers": "Offers"
+    }
+  },
+  "offersPage": {
+    "title": "Exclusive Offers",
+    "subtitle": "Direct from US Auctions",
+    "description": "Browse our hand-picked selection of high-performance vehicles ready for import to Iraq, Jordan, and Dubai.",
+    "viewDetails": "View Details",
+    "inquire": "Inquire Now",
+    "price": "Price",
+    "auction": "Auction",
+    "location": "Location",
+    "miles": "Miles"
+  },
+  "partners": {
+    "title": "Trusted Partners & Actions"
+  }
+}

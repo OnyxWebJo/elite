@@ -18,7 +18,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
   const dict = await getDictionary(lang);
   
   return (
-    <main className={`min-h-screen bg-[#EAECEF] ${lang === 'ar' ? 'font-cairo' : 'font-outfit'}`}>
+    <main className={`min-h-screen bg-[#EAECEF] overflow-x-hidden ${lang === 'ar' ? 'font-cairo' : 'font-outfit'}`}>
       <Header lang={lang} dict={dict.header} />
       <Hero dict={dict.hero} />
       <About dict={dict.about} />

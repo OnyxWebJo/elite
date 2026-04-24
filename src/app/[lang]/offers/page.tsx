@@ -12,7 +12,7 @@ export default async function OffersPage({ params }: { params: Promise<{ lang: '
   const dict = await getDictionary(lang);
   
   return (
-    <main className={`min-h-screen bg-[#EAECEF] ${lang === 'ar' ? 'font-cairo' : 'font-outfit'}`}>
+    <main className={`min-h-screen bg-[#EAECEF] overflow-x-hidden ${lang === 'ar' ? 'font-cairo' : 'font-outfit'}`}>
       <Header lang={lang} dict={dict.header} />
       
       {/* Page Header */}

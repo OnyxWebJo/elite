@@ -29,7 +29,7 @@ export default function Hero({ dict }: { dict: any }) {
   const slide = dict.slides[current];
 
   return (
-    <div className="relative w-full h-screen min-h-[700px] bg-black overflow-hidden flex flex-col">
+    <div className="relative w-full h-[100svh] min-h-[600px] bg-black overflow-hidden flex flex-col">
       <AnimatePresence mode="wait">
         <motion.div
           key={slide.id}
@@ -63,7 +63,7 @@ export default function Hero({ dict }: { dict: any }) {
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 0.1 }}
               transition={{ delay: 0.5, duration: 1.5 }}
-              className="text-[12vw] sm:text-[14vw] font-black uppercase text-white tracking-widest break-words text-center px-4"
+              className="text-[15vw] sm:text-[14vw] font-black uppercase text-white tracking-widest break-words text-center px-4"
             >
               {slide.subtitle}
             </motion.h1>
@@ -71,7 +71,7 @@ export default function Hero({ dict }: { dict: any }) {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 0.1 }}
               transition={{ delay: 0.5, duration: 1.5 }}
-              className="text-[12vw] sm:text-[14vw] font-black uppercase text-white tracking-widest break-words text-center px-4"
+              className="text-[15vw] sm:text-[14vw] font-black uppercase text-white tracking-widest break-words text-center px-4"
             >
               {slide.textBg}
             </motion.h1>

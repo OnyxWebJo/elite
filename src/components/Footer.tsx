@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Mail, FileText, Camera, Share2, MessageSquare } from "lucide-react";
+import { MapPin, Phone, Mail, FileText, Instagram, Facebook, Twitter } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
@@ -26,13 +26,13 @@ export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
           </p>
           <div className="flex justify-center sm:justify-start rtl:sm:justify-start gap-4">
             <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <Camera className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+              <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
             <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <Share2 className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+              <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
             <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <MessageSquare className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+              <Twitter className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
             </a>
           </div>
         </div>

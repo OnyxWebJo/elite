@@ -1,7 +1,27 @@
 "use client";
 
-import { MapPin, Phone, Mail, FileText, Instagram, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, FileText } from "lucide-react";
 import Link from "next/link";
+
+const InstagramLogo = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
+
+const FacebookLogo = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+  </svg>
+);
+
+const XLogo = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" className={className}>
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.008 5.964H5.078z"></path>
+  </svg>
+);
 
 export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
   const currentLang = lang || 'en';
@@ -25,14 +45,14 @@ export default function Footer({ lang, dict }: { lang?: string, dict: any }) {
             {dict.brandDesc}
           </p>
           <div className="flex justify-center sm:justify-start rtl:sm:justify-start gap-4">
-            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group flex items-center justify-center">
+              <InstagramLogo className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </a>
-            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group flex items-center justify-center">
+              <FacebookLogo className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </a>
-            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group">
-              <Twitter className="w-5 h-5 group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+            <a href="#" className="p-3 bg-[#111] hover:bg-red-600 transition-colors rounded-full group flex items-center justify-center">
+              <XLogo className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </a>
           </div>
         </div>

@@ -11,6 +11,10 @@ const CARS = [
   { id: 4, name: "2021 BMW M4 Competition G82", auction: "Copart", location: "NY, USA", miles: "22,000", price: "$58,000", img: "/images/car.png" },
 ];
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ar' }];
+}
+
 export default async function OffersPage({ params }: { params: Promise<{ lang: 'en' | 'ar' }> }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);

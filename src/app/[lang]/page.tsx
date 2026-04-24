@@ -9,6 +9,10 @@ import Footer from "@/components/Footer";
 import PartnerMarquee from "@/components/PartnerMarquee";
 import ContactSection from "@/components/ContactSection";
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ar' }];
+}
+
 export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ar' }> }) {
   const { lang } = await params;
   const dict = await getDictionary(lang);

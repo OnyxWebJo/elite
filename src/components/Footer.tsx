@@ -1,10 +1,13 @@
-import { MapPin, Phone, Mail, FileText } from "lucide-react";
+"use client";
+
+import { MapPin, Phone, Mail, FileText, Instagram, Facebook, Twitter } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer({ dict }: { dict: any }) {
   return (
     <footer className="bg-black text-white py-16 px-6 lg:px-12 border-t-8 border-red-600">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
+        
         {/* Brand */}
         <div>
           <Link href="/" className="flex flex-col group mb-6 inline-flex">
@@ -18,21 +21,32 @@ export default function Footer({ dict }: { dict: any }) {
           <p className="text-gray-400 text-sm leading-relaxed mb-6 font-light">
             {dict.brandDesc}
           </p>
+          <div className="flex justify-center sm:justify-start gap-4">
+            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a href="#" className="p-2 bg-[#111] hover:bg-red-600 transition-colors rounded-full">
+              <Twitter className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
         {/* Contact info */}
         <div>
           <h4 className="text-lg font-bold uppercase mb-6 tracking-wider">{dict.contact}</h4>
           <ul className="space-y-4">
-            <li className="flex items-start gap-3 text-gray-400 text-sm hover:text-white transition-colors">
+            <li className="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-gray-400 text-sm hover:text-white transition-colors">
               <MapPin className="text-red-500 w-5 h-5 flex-shrink-0" />
               <span>{dict.location}</span>
             </li>
-            <li className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
+            <li className="flex flex-col sm:flex-row items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
               <Phone className="text-red-500 w-5 h-5 flex-shrink-0" />
               <span>{dict.phone}</span>
             </li>
-            <li className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
+            <li className="flex flex-col sm:flex-row items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors">
               <Mail className="text-red-500 w-5 h-5 flex-shrink-0" />
               <span>{dict.email}</span>
             </li>
@@ -43,13 +57,10 @@ export default function Footer({ dict }: { dict: any }) {
         <div>
           <h4 className="text-lg font-bold uppercase mb-6 tracking-wider">{dict.quickLinks}</h4>
           <ul className="space-y-3">
-            {dict.links.map((link: string, index: number) => (
-              <li key={index}>
-                <a href="#" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">
-                  {link}
-                </a>
-              </li>
-            ))}
+            <li><Link href="#about" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">About Us</Link></li>
+            <li><Link href="#services" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">Our Services</Link></li>
+            <li><Link href="#process" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase">The Process</Link></li>
+            <li><Link href="/offers" className="text-gray-400 text-sm hover:text-red-500 transition-colors uppercase font-bold text-red-500">Latest Deals</Link></li>
           </ul>
         </div>
         
@@ -57,11 +68,11 @@ export default function Footer({ dict }: { dict: any }) {
         <div>
           <h4 className="text-lg font-bold uppercase mb-6 tracking-wider">{dict.subscribe}</h4>
           <p className="text-gray-400 text-sm mb-4 font-light">{dict.subscribeP}</p>
-          <div className="flex">
+          <div className="flex border border-gray-800 focus-within:border-red-600 transition-colors">
             <input 
               type="email" 
               placeholder={dict.placeholder} 
-              className="bg-[#111] text-white px-4 py-3 outline-none text-sm w-full border border-gray-800 focus:border-red-600 transition-colors"
+              className="bg-[#111] text-white px-4 py-3 outline-none text-sm w-full"
             />
             <button className="bg-red-600 px-4 flex items-center justify-center hover:bg-white hover:text-red-600 transition-colors group">
               <FileText className="w-5 h-5 group-hover:scale-110 transition-transform" />

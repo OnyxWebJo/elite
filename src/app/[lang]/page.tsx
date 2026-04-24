@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Footer from "@/components/Footer";
 import PartnerMarquee from "@/components/PartnerMarquee";
+import ContactSection from "@/components/ContactSection";
 
 export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ar' }> }) {
   const { lang } = await params;
@@ -21,6 +22,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       <HowItWorks dict={dict.howItWorks} />
       <WhyChooseUs dict={dict.whyChooseUs} />
       <PartnerMarquee dict={dict} />
+      <ContactSection dict={dict} />
       <Footer dict={dict.footer} />
     </main>
   );

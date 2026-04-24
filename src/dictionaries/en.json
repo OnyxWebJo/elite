@@ -128,7 +128,17 @@
     "location": "Location",
     "miles": "Miles"
   },
-  "partners": {
-    "title": "Trusted Partners & Actions"
+  "contactForm": {
+    "title": "Contact Us",
+    "desc": "Contact us today and start your journey to import your car from the USA with ease and confidence.",
+    "locationText": "Najaf - Iraq",
+    "phoneText": "+964 123 456 7890",
+    "emailText": "info@elitecargo.iq",
+    "whatsappText": "Available 24/7",
+    "formName": "Full Name",
+    "formPhone": "Phone Number",
+    "formInterest": "Vehicle of Interest (Optional)",
+    "formMessage": "How can we help you?",
+    "formSubmit": "Send Inquiry"
   }
 }

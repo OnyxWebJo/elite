@@ -128,7 +128,17 @@
     "location": "الموقع",
     "miles": "الممشى"
   },
-  "partners": {
-    "title": "شركاء النجاح والمزادات المعتمدة"
+  "contactForm": {
+    "title": "تواصل معنا",
+    "desc": "تواصل معنا اليوم وابدأ رحلتك في استيراد سيارتك من أمريكا بكل سهولة وثقة.",
+    "locationText": "النجف - العراق",
+    "phoneText": "+964 123 456 7890",
+    "emailText": "info@elitecargo.iq",
+    "whatsappText": "متاح على مدار الساعة 24/7",
+    "formName": "الاسم الكامل",
+    "formPhone": "رقم الهاتف",
+    "formInterest": "السيارة المطلوبة (اختياري)",
+    "formMessage": "كيف يمكننا مساعدتك؟",
+    "formSubmit": "إرسال الاستفسار"
   }
 }

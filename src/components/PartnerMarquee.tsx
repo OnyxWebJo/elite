@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const logos = [
-  { src: "/elite/images/auction-logos/copart.png", alt: "Copart" },
-  { src: "/elite/images/auction-logos/iaai.jpg", alt: "IAAI" },
-  { src: "/elite/images/auction-logos/manhaiem.jpeg", alt: "Manheim" },
-  { src: "/elite/images/auction-logos/adesa.png", alt: "Adesa" },
-  { src: "/elite/images/auction-logos/maersk.png", alt: "Maersk" },
-  { src: "/elite/images/auction-logos/msc.png", alt: "MSC" },
-  { src: "/elite/images/auction-logos/logo_HLAG.png", alt: "Hapag-Lloyd" },
+  { src: "/images/auction-logos/copart.png", alt: "Copart" },
+  { src: "/images/auction-logos/iaai.jpg", alt: "IAAI" },
+  { src: "/images/auction-logos/manhaiem.jpeg", alt: "Manheim" },
+  { src: "/images/auction-logos/adesa.png", alt: "Adesa" },
+  { src: "/images/auction-logos/maersk.png", alt: "Maersk" },
+  { src: "/images/auction-logos/msc.png", alt: "MSC" },
+  { src: "/images/auction-logos/logo_HLAG.png", alt: "Hapag-Lloyd" },
 ];
 
 export default function PartnerMarquee({ dict }: { dict: any }) {

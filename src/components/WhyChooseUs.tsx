@@ -31,7 +31,7 @@ export default function WhyChooseUs({ dict }: { dict: any }) {
           {/* Abstract Image container */}
           <div className="relative h-[32rem] w-full bg-black flex items-center justify-center overflow-hidden group shadow-2xl rounded-sm">
             <Image 
-               src="/elite/images/why-choose-us.png" 
+               src="/images/why-choose-us.png" 
                alt="Elite Cargo Trust & Reliability" 
                fill 
                className="object-cover opacity-90 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700"

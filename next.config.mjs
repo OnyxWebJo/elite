@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/elite',
-  trailingSlash: true,
+  // Vercel handles optimization and routing automatically
   images: {
-    unoptimized: true,
+    unoptimized: true, // Keeping this for now for simplicity
     remotePatterns: [
       {
         protocol: 'https',

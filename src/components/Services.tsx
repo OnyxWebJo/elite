@@ -46,7 +46,7 @@ export default function Services({ dict }: { dict: any }) {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {dict.items.map((service: any, index: number) => (

@@ -31,7 +31,7 @@ export default function OffersGrid({ lang, dict }: { lang: string, dict: any }) 
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "0px" }}
       className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
     >
       {CARS.map((car) => (

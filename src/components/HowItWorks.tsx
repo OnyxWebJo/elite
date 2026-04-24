@@ -41,7 +41,7 @@ export default function HowItWorks({ dict }: { dict: any }) {
           variants={container}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="flex flex-col xl:flex-row justify-between items-start gap-8 relative"
         >
           {/* Connector Line */}

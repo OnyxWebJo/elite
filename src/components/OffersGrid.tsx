@@ -1,10 +1,19 @@
 "use client";
 
+import { motion, Variants } from "framer-motion";
+import { Gauge, Calendar, ShieldCheck, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
-export default function OffersGrid({ dict, CARS }: { dict: any, CARS: any[] }) {
-  const container = {
+const CARS = [
+  { id: 1, name: "2024 Porsche 911 GT3", price: "$198,000", auction: "Copart", loc: "Florida, USA", miles: "1,200", img: "/images/car.png" },
+  { id: 2, name: "2023 Mercedes-AMG G63", price: "$185,000", auction: "IAAI", loc: "California, USA", miles: "5,400", img: "/images/car.png" },
+  { id: 3, name: "2024 BMW M4 Competition", price: "$84,500", auction: "Manheim", loc: "Texas, USA", miles: "800", img: "/images/car.png" },
+  { id: 4, name: "2023 Audi RS7 Sportback", price: "$114,000", auction: "Adesa", loc: "New York, USA", miles: "3,200", img: "/images/car.png" },
+];
+
+export default function OffersGrid({ lang, dict }: { lang: string, dict: any }) {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -12,7 +21,7 @@ export default function OffersGrid({ dict, CARS }: { dict: any, CARS: any[] }) {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, scale: 0.9, y: 50 },
     show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, type: "spring" } }
   };
@@ -38,37 +47,39 @@ export default function OffersGrid({ dict, CARS }: { dict: any, CARS: any[] }) {
               fill 
               className="object-cover group-hover:scale-110 transition-transform duration-700" 
             />
-            <div className="absolute top-4 left-4 rtl:left-auto rtl:right-4 bg-red-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1">
+            <div className="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
               {car.auction}
             </div>
           </div>
           
           <div className="p-6">
-            <h3 className="text-xl font-black text-gray-900 mb-4 uppercase tracking-tight leading-snug h-14 overflow-hidden">{car.name}</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-2 uppercase tracking-tight truncate">
+              {car.name}
+            </h3>
             
-            <div className="space-y-2 mb-6">
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">{dict.offersPage.location}:</span>
-                <span className="font-bold text-gray-900">{car.location}</span>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-2xl font-black text-red-600">{car.price}</span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-y-3 mb-8">
+              <div className="flex items-center gap-2 text-gray-500 text-xs uppercase font-medium">
+                <Gauge className="w-3 h-3 text-red-600" />
+                {car.miles} MI
               </div>
-              <div className="flex justify-between text-sm">
-                <span className="text-gray-500">{dict.offersPage.miles}:</span>
-                <span className="font-bold text-gray-900">{car.miles}</span>
+              <div className="flex items-center gap-2 text-gray-500 text-xs uppercase font-medium">
+                <Calendar className="w-3 h-3 text-red-600" />
+                2024
               </div>
-              <div className="flex justify-between text-sm border-t border-gray-100 mt-2 pt-2">
-                <span className="text-gray-500 uppercase tracking-widest">{dict.offersPage.price}:</span>
-                <span className="font-black text-red-600 text-lg">{car.price}</span>
+              <div className="flex items-center gap-2 text-gray-500 text-xs uppercase font-medium col-span-2">
+                <ShieldCheck className="w-3 h-3 text-red-600" />
+                {car.loc}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <button className="text-center bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 text-sm font-bold uppercase tracking-wider transition-colors">
-                {dict.offersPage.viewDetails}
-              </button>
-              <button className="text-center bg-black hover:bg-red-600 text-white py-3 text-sm font-bold uppercase tracking-wider transition-colors">
-                {dict.offersPage.inquire}
-              </button>
-            </div>
+            <button className="w-full flex items-center justify-center gap-2 py-4 bg-gray-900 text-white text-xs font-bold uppercase tracking-widest hover:bg-red-600 transition-colors group/btn">
+              {dict.inquire}
+              <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+            </button>
           </div>
         </motion.div>
       ))}

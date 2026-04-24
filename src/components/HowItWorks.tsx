@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function HowItWorks({ dict }: { dict: any }) {
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -11,7 +11,7 @@ export default function HowItWorks({ dict }: { dict: any }) {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, scale: 0.9, y: 20 },
     show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, type: "spring" } }
   };
@@ -53,7 +53,7 @@ export default function HowItWorks({ dict }: { dict: any }) {
             className="hidden xl:block absolute top-12 left-0 right-0 w-full h-[2px] bg-gray-300 origin-left -z-10"
           ></motion.div>
           
-          {dict.steps.map((step: string, index: number) => (
+          {dict.steps && dict.steps.map((step: string, index: number) => (
             <motion.div 
               variants={item}
               key={index} 

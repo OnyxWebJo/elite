@@ -3,14 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OffersGrid from "@/components/OffersGrid";
 
-// Placeholder car data for the offers page
-const CARS = [
-  { id: 1, name: "2023 Dodge Charger SRT Hellcat", auction: "Copart", location: "TX, USA", miles: "12,000", price: "$45,000", img: "/images/car.png" },
-  { id: 2, name: "2022 Ford Mustang GT Premium", auction: "IAAI", location: "CA, USA", miles: "8,500", price: "$32,000", img: "/images/car.png" },
-  { id: 3, name: "2024 Chevrolet Camaro ZL1 1LE", auction: "Manheim", location: "FL, USA", miles: "3,000", price: "$65,000", img: "/images/car.png" },
-  { id: 4, name: "2021 BMW M4 Competition G82", auction: "Copart", location: "NY, USA", miles: "22,000", price: "$58,000", img: "/images/car.png" },
-];
-
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'ar' }];
 }
@@ -35,7 +27,7 @@ export default async function OffersPage({ params }: { params: Promise<{ lang: '
 
       {/* Offers Grid */}
       <section className="py-24 px-6 lg:px-12 overflow-hidden">
-        <OffersGrid dict={dict} CARS={CARS} />
+        <OffersGrid lang={lang} dict={dict} />
       </section>
 
       <Footer lang={lang} dict={dict.footer} />

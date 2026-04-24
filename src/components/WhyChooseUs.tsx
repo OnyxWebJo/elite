@@ -1,11 +1,11 @@
 "use client";
 
 import { CheckCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
 export default function WhyChooseUs({ dict }: { dict: any }) {
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -13,7 +13,7 @@ export default function WhyChooseUs({ dict }: { dict: any }) {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, x: -20 },
     show: { opacity: 1, x: 0, transition: { duration: 0.5 } }
   };

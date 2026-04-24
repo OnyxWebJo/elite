@@ -1,7 +1,7 @@
 "use client";
 
 import { Search, PenTool, Truck, Ship, Box, Bell } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function Services({ dict }: { dict: any }) {
   const getIcon = (index: number) => {
@@ -15,7 +15,7 @@ export default function Services({ dict }: { dict: any }) {
     }
   };
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -23,7 +23,7 @@ export default function Services({ dict }: { dict: any }) {
     }
   };
 
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 30 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };

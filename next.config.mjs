@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/elite',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
